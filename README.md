@@ -4,7 +4,7 @@
 
 Titan Audio Link provides paired Windows audio endpoints, a native desktop application, a console tool and a small C++ SDK. Send audio to the pair's playback endpoint in one application and select its recording endpoint in another. Each pair has its own kernel transport.
 
-> **Engineering preview.** Microsoft signing and the supported-Windows validation matrix are not complete. Check [validation status](docs/VALIDATION.md) before deployment. An unsigned package is not a usable public driver release. No WHQL certification, universal compatibility or zero-latency claim is made.
+> **Microsoft-signed evaluation bundle.** Application, SDK, examples and self-contained UI/console installers are included. Check [validation status](docs/VALIDATION.md) for exercised platforms and remaining production qualification. No WHQL certification, universal compatibility or zero-latency claim is made.
 
 ![Native application in explicitly labelled offline preview mode](docs/app.png)
 
@@ -20,8 +20,8 @@ The initial native format is **48 kHz, stereo, signed 16-bit PCM**. The SDK pres
 
 ## Install and use
 
-1. Download the complete Windows x64 ZIP from [Releases](https://github.com/titanfyre/Titan-Audio-Link/releases). Preview-only ZIPs explicitly state that an installable driver is absent.
-2. When a validated Microsoft-signed package is available, run `Dependencies\TitanAudioLinkSetup.exe` as administrator and choose **Install / reinstall**. Restart Windows only if setup requests it.
+1. Download the complete Windows x64 ZIP from [Releases](https://github.com/titanfyre/Titan-Audio-Link/releases) and extract it.
+2. Run `Dependencies\TitanAudioLinkSetup.exe` as administrator and choose **Install / reinstall**. Restart Windows only if setup requests it.
 3. Open `TitanAudioLink.exe`. Refresh the endpoint list and select the playback/recording pair.
 4. In the source application's output settings, select the **Titan Audio Link playback endpoint**. In the receiving application's input settings, select the corresponding Titan Audio Link recording endpoint. Windows can prefix their names with localized labels such as **Line** and **Line In**, and numbers distinguish additional adapters. The application pairs them by their adapter identity, not just their display names.
 5. Use **Test virtual cable** to play quiet, independent left/right fixtures into the virtual output and check their arrival at the paired virtual input. Every frame of both sequences must match at the same sample offset, within explicit PCM16 conversion-noise bounds. The test does not open a physical microphone or speaker and does not record audio to disk.
@@ -90,6 +90,6 @@ For virtual audio in your software, a branded package, reproducible audio QA fix
 
 See [commercial integration](docs/COMMERCIAL.md) for the pilot and delivery process.
 
-The application and its original user-mode SDK are MIT licensed. The private driver has separate terms and incorporates Microsoft sample components under MS-PL; see [third-party notices](THIRD-PARTY-NOTICES.md). These engineering previews do not implement an enforced timer or online licensing. Existing Interceptor/Vdevice activation keys do not activate this driver.
+The application and its original user-mode SDK are MIT licensed. The private driver has separate terms and incorporates Microsoft sample components under MS-PL; see [third-party notices](THIRD-PARTY-NOTICES.md). The download includes `BINARY-LICENSE.txt` evaluation terms, the full MS-PL license and third-party notices. This evaluation build does not implement an enforced timer or online licensing. Existing Interceptor/Vdevice activation keys do not activate this driver.
 
 Use the software only for authorized audio routing and testing. No illegal or unauthorized use is endorsed. Software is provided AS IS under its applicable license; users remain responsible for their actions, subject to applicable law.

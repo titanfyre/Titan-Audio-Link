@@ -118,7 +118,7 @@ LRESULT CALLBACK Procedure(HWND handle, UINT message, WPARAM wparam, LPARAM lpar
         buttons[5] = Button(handle, L"License", 7, 644, 96);
         list = CreateWindowExW(0, L"LISTBOX", L"", WS_CHILD | WS_VISIBLE | WS_TABSTOP | WS_VSCROLL | LBS_NOTIFY | LBS_NOINTEGRALHEIGHT,
             28, 192, 748, 136, handle, reinterpret_cast<HMENU>(11), nullptr, nullptr);
-        details = CreateWindowExW(0, L"EDIT", L"Select Install / update to install the signed package. This preview requires a separate Microsoft signing step before its driver can be embedded.\r\n\r\nInstall / update reuses existing pairs. Add pair creates one additional pair. Select a row to view its exact Windows state.",
+        details = CreateWindowExW(0, L"EDIT", L"Select Install / update to install the embedded Microsoft-signed evaluation package. Setup validates its catalog and INF/SYS membership before installation.\r\n\r\nInstall / update reuses existing pairs. Add pair creates one additional pair. Select a row to view its exact Windows state.",
             WS_CHILD | WS_VISIBLE | WS_TABSTOP | ES_MULTILINE | ES_READONLY | ES_AUTOVSCROLL | WS_VSCROLL,
             28, 346, 748, 150, handle, nullptr, nullptr, nullptr);
         progress = CreateWindowExW(0, PROGRESS_CLASSW, L"", WS_CHILD | PBS_MARQUEE, 28, 514, 560, 8, handle, nullptr, nullptr, nullptr);

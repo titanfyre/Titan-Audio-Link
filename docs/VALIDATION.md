@@ -1,6 +1,6 @@
 # Validation and current scope
 
-Engineering preview. Compilation, offline tests and source review do not establish that a signed audio driver works correctly in every Windows audio stack.
+Signed evaluation build. Compilation, offline tests and source review do not establish that a signed audio driver works correctly in every Windows audio stack.
 
 ## Implemented boundary
 
@@ -25,7 +25,7 @@ Observed render-submission-to-capture timestamps across both campaigns ranged fr
 
 Dedicated private ETW traces contained 21 product stop-summary records per campaign. Their DMA-loss, ring-missing, ring-drop and skipped-packet counters were all zero; the trace headers reported no lost events or buffers. These counters cover the observed streams, not every possible failure or an extended soak test.
 
-Microsoft signing, Windows 11, HVCI/Secure Boot, production-installer recovery and extended audio soak tests remain separate release gates. An earlier candidate failed Driver Verifier; its crash evidence and the other failed experiments are retained privately. Their results are not replaced by the successful current-image campaigns. No unsigned driver or lab certificate is supplied in the public ZIP.
+Windows 11, HVCI/Secure Boot, broader installer recovery and extended audio soak tests remain separate qualification gates. An earlier candidate failed Driver Verifier; its crash evidence and the other failed experiments are retained privately. Their results are not replaced by the successful current-image campaigns. No unsigned driver or lab certificate is supplied in the public ZIP.
 
 The release notes will identify actual tests and any remaining blockers. A sample waveform or sample-mode screenshot is never evidence of live kernel transport.
 
@@ -38,3 +38,11 @@ The sample offset is a correlation alignment between generated and captured samp
 Windows audio periods are API-reported configuration values. WASAPI discontinuity/timestamp flags describe those packets and do not expose a complete internal driver-ring overrun/underrun counter. Zero flags alone do not prove uninterrupted or bit-perfect audio.
 
 Kernel source is adapted from Microsoft's SimpleAudioSample, whose original render-discard and tone-generation behavior must not be mistaken for an audio link. The product's transport replaces those data paths; verification must compare data supplied on the render side against data observed on capture.
+
+## Returned Microsoft-signed package validation
+
+The returned 0.1.0.0 package was verified against the submitted image: unchanged INF and Authenticode-protected SYS content, trusted Microsoft catalog, and INF/SYS catalog membership. Both self-contained installers embed the exact verified files.
+
+The actual console installer, live functionality and uninstall/unload passed on Windows 10 build 19045 x64 twice: normally and under standard Driver Verifier targeted at this product and the other two evaluation drivers. Guest test-signing was disabled; no lab certificate was used. 38 checks on two virtual audio pairs per campaign: six complete stereo fixtures, pair/channel isolation, cancellation, callback recovery and repeated stream open/close. No new minidump was observed. Both campaigns restored the original VM and preserved its historical checkpoints. No driver was installed on the development host.
+
+These are bounded VM tests, not a Windows 11, Secure Boot/HVCI, physical hardware, long-duration or customer-deployment qualification. Installer UI resources are byte-verified; the automated install/uninstall runs used the console setup.

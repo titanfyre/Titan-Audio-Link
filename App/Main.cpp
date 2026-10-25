@@ -130,7 +130,7 @@ void OpenSetup() {
     if(!count||count==std::size(module))return;
     std::wstring path(module);const auto slash=path.find_last_of(L"\\/");if(slash==std::wstring::npos)return;
     path.resize(slash+1);path+=L"Dependencies\\TitanAudioLinkSetup.exe";
-    if(GetFileAttributesW(path.c_str())==INVALID_FILE_ATTRIBUTES){MessageBoxW(state.window,L"The signed driver installer is distributed separately while this is an engineering preview. After Microsoft signing, place TitanAudioLinkSetup.exe in the Dependencies folder beside this application.",L"Driver setup",MB_OK|MB_ICONINFORMATION);return;}
+    if(GetFileAttributesW(path.c_str())==INVALID_FILE_ATTRIBUTES){MessageBoxW(state.window,L"Driver setup is missing. Extract the complete signed evaluation ZIP and keep Dependencies\\TitanAudioLinkSetup.exe beside this application.",L"Driver setup",MB_OK|MB_ICONINFORMATION);return;}
     SHELLEXECUTEINFOW launch{sizeof(launch)};launch.hwnd=state.window;launch.lpVerb=L"open";launch.lpFile=path.c_str();launch.nShow=SW_SHOWNORMAL;
     if(!ShellExecuteExW(&launch))MessageBoxW(state.window,L"Windows could not open the driver installer.",L"Driver setup",MB_OK|MB_ICONERROR);
 }
