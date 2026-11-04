@@ -1,0 +1,20 @@
+Titan Audio Link 0.1.0 engineering preview
+Copyright (c) 2026 TitanCSA.
+
+This driver contains modifications of Microsoft's SimpleAudioSample, from the
+Windows-driver-samples repository commit
+bb68ed5e770bce04dc5395ec9258dafab034184d:
+https://github.com/microsoft/Windows-driver-samples/tree/bb68ed5e770bce04dc5395ec9258dafab034184d/audio/simpleaudiosample
+
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+The Microsoft-origin portions are licensed under the Microsoft Public License
+(MS-PL). The complete license is in LICENSE-Microsoft-Sample.txt. Retain these
+notices and that license when distributing a driver binary that contains those
+portions. Microsoft trademarks are not licensed.
+
+Titan changes implement an adapter-local render-to-capture PCM queue, remove
+synthetic capture tones and recording-to-disk, remove fictional hardware nodes,
+bound allocations and notification lists, harden stream lifecycle and format
+validation, and provide branded INF endpoint properties. No timer or remote
+license activation is currently enforced. Microsoft signing and broader runtime
+compatibility qualification are separate steps.

@@ -1,0 +1,74 @@
+Titan-Audio-Link driver source - file-level license map
+
+Paths below are relative to driver/. Each original source/notice file
+and the generated build wrapper/README is classified once.
+
+LicenseRef-Titan-Evaluation-1.0 denotes the separate Titan Demo Driver
+Source Evaluation License, version 1.0, supplied in LICENSE.txt.
+Only files explicitly marked with that identifier receive those terms.
+The repository root LICENSE and existing user-mode/SDK grants are unchanged.
+
+MIT and MS-PL rows retain their complete prior permissions. The custom
+evaluation license adds no production-use, commercial-use, modification,
+redistribution, timer-preservation or authorization-preservation restriction
+to MIT/MS-PL rows. This exception applies to the whole identified file,
+including interleaved Titan changes in a sample-derived source file.
+
+Retained-Notice rows are attribution/license records: keep them intact;
+the custom evaluation terms do not narrow the licenses they reproduce.
+This map and THIRD-PARTY-LICENSES/ may be reproduced with the source.
+
+PROMINENT SAMPLE EXCEPTION: ALL files in Driver/** are distributed
+under MS-PL, including Titan changes, helper files, INF/resource files
+and project descriptions. Custom evaluation restrictions do not apply
+to those files. This deliberately conservative boundary avoids trying
+to separate mixed Microsoft/Titan contributions inside sample projects.
+
+Complete retained license texts:
+  THIRD-PARTY-LICENSES/MS-PL.txt
+
+MS-PL:
+  Driver/Filters/micarray1toptable.h
+  Driver/Filters/micarraytopo.cpp
+  Driver/Filters/micarraytopo.h
+  Driver/Filters/micarraywavtable.h
+  Driver/Filters/minipairs.h
+  Driver/Filters/speakertopo.cpp
+  Driver/Filters/speakertopo.h
+  Driver/Filters/speakertoptable.h
+  Driver/Filters/speakerwavtable.h
+  Driver/Inc/CapturePackets.h
+  Driver/Inc/NewDelete.h
+  Driver/Inc/PacketDeadline.h
+  Driver/Inc/PcmClock.h
+  Driver/Inc/PcmRing.h
+  Driver/Inc/TransportTrace.h
+  Driver/Inc/basetopo.h
+  Driver/Inc/common.h
+  Driver/Inc/definitions.h
+  Driver/Inc/endpoints.h
+  Driver/Inc/kshelper.h
+  Driver/Inc/mintopo.h
+  Driver/Main/NewDelete.cpp
+  Driver/Main/adapter.cpp
+  Driver/Main/basetopo.cpp
+  Driver/Main/common.cpp
+  Driver/Main/mintopo.cpp
+  Driver/Main/minwavert.cpp
+  Driver/Main/minwavert.h
+  Driver/Main/minwavertstream.cpp
+  Driver/Main/minwavertstream.h
+  Driver/TitanAudioLink.inf
+  Driver/TitanAudioLink.rc
+  Driver/TitanAudioLink.vcxproj
+  Driver/Utilities/hw.cpp
+  Driver/Utilities/hw.h
+  Driver/Utilities/kshelper.cpp
+
+LicenseRef-Titan-Evaluation-1.0:
+  Build.ps1
+  README.md
+
+Retained-Notice:
+  LICENSE-Microsoft-Sample.txt
+  NOTICE.txt

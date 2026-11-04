@@ -86,6 +86,12 @@ Signal correlation and sample offset describe the test fixture's alignment throu
 
 ## Build
 
+Demo/evaluation driver source is available; see [driver/README.md](driver/README.md) for
+build instructions and separate evaluation-source terms. Those terms apply to
+Titan-authored driver code. Third-party source licenses and existing application/SDK
+licenses remain applicable. Full/commercial implementation and private signing or
+activation material are excluded.
+
 Install Visual Studio 2022 with C++ desktop tools, CMake and a Windows SDK:
 
 ```powershell
@@ -93,7 +99,7 @@ Install Visual Studio 2022 with C++ desktop tools, CMake and a Windows SDK:
 .\Build.ps1 -AddressSanitizer
 ```
 
-Application, SDK, examples and offline tests are public. The adapted kernel driver source stays private. Driver development and signing are separate from building this application. Current targets are Windows 10 2004+ and Windows 11 x64; actual tested builds are listed in the validation document.
+Application, SDK, examples and offline tests are public. The evaluation driver source and its retained third-party notices are documented in [driver/README.md](driver/README.md). Driver development and signing are separate from building this application. Current targets are Windows 10 2004+ and Windows 11 x64; actual tested builds are listed in the validation document.
 
 ## OEM integration and support
 
@@ -101,6 +107,6 @@ For virtual audio in your software, a branded package, reproducible audio QA fix
 
 See [commercial integration](docs/COMMERCIAL.md) for the pilot and delivery process.
 
-The application and its original user-mode SDK are MIT licensed. The private driver has separate terms and incorporates Microsoft sample components under MS-PL; see [third-party notices](THIRD-PARTY-NOTICES.md). The download includes `BINARY-LICENSE.txt` evaluation terms, the full MS-PL license and third-party notices. This evaluation build does not implement an enforced timer or online licensing. Existing Interceptor/Vdevice activation keys do not activate this driver.
+The application and its original user-mode SDK are MIT licensed. The prebuilt driver has separate terms and incorporates Microsoft sample components under MS-PL; see [third-party notices](THIRD-PARTY-NOTICES.md). The published `driver/Driver/**` source files, including Titan changes in those files, retain MS-PL; see [the file-specific license map](driver/LICENSE-MAP.txt). The download includes `BINARY-LICENSE.txt` evaluation terms, the full MS-PL license and third-party notices. This evaluation build does not implement an enforced timer or online licensing. Existing Interceptor/Vdevice activation keys do not activate this driver.
 
 Use the software only for authorized audio routing and testing. No illegal or unauthorized use is endorsed. Software is provided AS IS under its applicable license; users remain responsible for their actions, subject to applicable law.

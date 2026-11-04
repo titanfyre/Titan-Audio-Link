@@ -12,7 +12,7 @@ pinned at commit `bb68ed5e770bce04dc5395ec9258dafab034184d`:
 - Repository license: Copyright (c) 2015 Microsoft, Microsoft Public License (MS-PL).
 - Full license: [LICENSE-Microsoft-Sample.txt](docs/LICENSE-Microsoft-Sample.txt).
 
-The kernel source is not included in this public application repository. The
+The Evaluation driver source and its retained Microsoft-origin notices are documented in [driver/README.md](driver/README.md). The
 Microsoft portions retain their applicable MS-PL rights and notices; separate
 Titan binary evaluation/commercial terms do not replace or restrict those
 third-party rights. This notice does not claim that Microsoft's sample

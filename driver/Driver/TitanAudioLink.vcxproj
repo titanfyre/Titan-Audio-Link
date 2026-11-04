@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations"><ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration></ItemGroup>
+  <PropertyGroup Label="Globals"><ProjectGuid>{D2CB081C-3A26-4968-A02F-CA81645F250B}</ProjectGuid><WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration"><ConfigurationType>Driver</ConfigurationType><DriverType>KMDF</DriverType><PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset><TargetVersion>Windows10</TargetVersion><_NT_TARGET_VERSION>0xA000008</_NT_TARGET_VERSION><KmdfVersion>1.31</KmdfVersion><DriverTargetPlatform>Desktop</DriverTargetPlatform><UseDebugLibraries>false</UseDebugLibraries></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup><OutDir>$(MSBuildThisFileDirectory)..\bin\</OutDir><IntDir>$(MSBuildThisFileDirectory)..\obj\</IntDir><TargetName>TitanAudioLink</TargetName><SignMode>Off</SignMode><EnableInf2cat>false</EnableInf2cat><SkipPackageVerification>true</SkipPackageVerification><SupportsPackaging>false</SupportsPackaging></PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile><WarningLevel>Level4</WarningLevel><TreatWarningAsError>true</TreatWarningAsError><AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)Inc;$(MSBuildThisFileDirectory)Main;$(MSBuildThisFileDirectory)Utilities;$(MSBuildThisFileDirectory)Filters;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><PreprocessorDefinitions>_WIN32;UNICODE;_UNICODE;PC_IMPLEMENTATION;DEBUG_LEVEL=DEBUGLVL_TERSE;_NEW_DELETE_OPERATORS_;%(PreprocessorDefinitions)</PreprocessorDefinitions><EnablePREfast>true</EnablePREfast><ControlFlowGuard>Guard</ControlFlowGuard><Optimization>MaxSpeed</Optimization><BufferSecurityCheck>true</BufferSecurityCheck><ExceptionHandling>false</ExceptionHandling><RuntimeTypeInfo>false</RuntimeTypeInfo><LanguageStandard>stdcpp17</LanguageStandard></ClCompile>
+    <Link><AdditionalDependencies>portcls.lib;stdunk.lib;libcntpr.lib;%(AdditionalDependencies)</AdditionalDependencies><AdditionalOptions>/guard:cf /PDBALTPATH:%_PDB% %(AdditionalOptions)</AdditionalOptions></Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Main\adapter.cpp" /><ClCompile Include="Main\common.cpp" /><ClCompile Include="Main\basetopo.cpp" /><ClCompile Include="Main\mintopo.cpp" /><ClCompile Include="Main\minwavert.cpp" /><ClCompile Include="Main\minwavertstream.cpp" /><ClCompile Include="Main\NewDelete.cpp" /><ClCompile Include="Filters\speakertopo.cpp" /><ClCompile Include="Filters\micarraytopo.cpp" /><ClCompile Include="Utilities\hw.cpp" /><ClCompile Include="Utilities\kshelper.cpp" />
+    <ResourceCompile Include="TitanAudioLink.rc" />
+    <Inf Include="TitanAudioLink.inf"><SpecifyDriverVerDirectiveDate>false</SpecifyDriverVerDirectiveDate><SpecifyDriverVerDirectiveVersion>false</SpecifyDriverVerDirectiveVersion></Inf>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
