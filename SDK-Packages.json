@@ -3,26 +3,83 @@
   "packages": [
     {
       "directory": "packaging/native",
-      "central_registry_status": "not_published",
-      "distribution": "GitHub source and downloadable release artifacts",
-      "source_layout": "Shared native SDK source; registry recipes are kept alongside CMakeLists.txt."
-    },
-    {
-      "directory": "packaging/native",
-      "central_registry_status": "not_published",
-      "distribution": "GitHub source and downloadable release artifacts",
-      "source_layout": "Shared native SDK source; registry recipes are kept alongside CMakeLists.txt."
-    },
-    {
-      "directory": "packaging/native",
-      "central_registry_status": "not_published",
-      "distribution": "GitHub source and downloadable release artifacts",
-      "source_layout": "Shared native SDK source; registry recipes are kept alongside CMakeLists.txt."
+      "build_system": "CMake",
+      "registry_recipes": {
+        "vcpkg": "packaging/native/portfile.cmake",
+        "Conan": "packaging/native/conanfile.py",
+        "NuGet": [
+          "packaging/native/TitanCSA.TitanAudioLink.Native.nuspec"
+        ]
+      },
+      "distribution": "Shared native source; registry publication is reported separately below"
     }
   ],
   "notes": "Registry accounts or community acceptance are separate. No missing language binding is represented as implemented.",
   "native_source_archive": {
     "url": "https://github.com/titanfyre/Titan-Audio-Link/releases/download/sdk-v0.1.1/titan-audio-link-sdk-0.1.1.tar.gz",
     "sha256": "427b8a68f926b1c2e322ba98a8280e1fcdd02ee365a129ccc54264da45a8ec73"
-  }
+  },
+  "registry_publications": {
+    "CPP/vcpkg": {
+      "status": "published_custom_registry",
+      "registry": "https://github.com/TitanCSA/vcpkg-registry",
+      "baseline": "2a5f4f4037f5fbd911344250e43e7a1d48e04fe6",
+      "port": "titan-audio-link-sdk",
+      "microsoft_curated_registry": false
+    },
+    "CPP/conan": {
+      "status": "public_recipe_builds_locally",
+      "conan_center": false,
+      "directory": "Titan-Audio-Link-CPP-conan",
+      "github_directory": "packaging/native"
+    },
+    "CPP/nuget": {
+      "status": "paused_pending_owner_email_confirmation",
+      "name": "Titan-Audio-Link.Native",
+      "version": "0.1.1",
+      "registry_published": false,
+      "consumer_build_verified": true,
+      "documentation_bundled": true
+    },
+    "NET/nuget": {
+      "status": "binding_not_implemented"
+    },
+    "Python/pypi": {
+      "status": "binding_not_implemented"
+    },
+    "Python/conda-forge": {
+      "status": "binding_not_implemented"
+    },
+    "Rust/cargo": {
+      "status": "binding_not_implemented"
+    },
+    "JavaScript/npm": {
+      "status": "binding_not_implemented"
+    },
+    "Java/maven": {
+      "status": "binding_not_implemented"
+    },
+    "Java/jitpack": {
+      "status": "binding_not_implemented"
+    },
+    "Go/modules": {
+      "status": "binding_not_implemented"
+    },
+    "Go/pkg-go-dev": {
+      "status": "binding_not_implemented"
+    },
+    "PowerShell/gallery": {
+      "status": "binding_not_implemented"
+    },
+    "Dart/pub-dev": {
+      "status": "binding_not_implemented"
+    },
+    "Ruby/rubygems": {
+      "status": "binding_not_implemented"
+    },
+    "PHP/packagist": {
+      "status": "binding_not_implemented"
+    }
+  },
+  "coverage_note": "Missing language bindings are explicitly listed. Published GitHub archives are distinct from central registry acceptance. Local organized SDK folders are retained."
 }
