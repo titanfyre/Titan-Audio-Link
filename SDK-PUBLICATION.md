@@ -2,30 +2,30 @@
 
 Projet : [Titan-Audio-Link](https://github.com/titanfyre/Titan-Audio-Link). [Sources et documentation des SDK](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-Audio-Link).
 
-Choisis la ligne correspondant au langage de ton application. Installe son outil habituel (Node.js/npm, Python/pip, .NET, etc.), puis execute la commande dans le dossier de ton application. Les pilotes et applications requis restent a installer separement selon le README du projet.
+Choisis le paquet a installer. Installe son outil habituel (Node.js/npm, Python/pip, .NET, etc.), puis execute la commande dans le dossier de ton application. Les pilotes et applications requis restent a installer separement selon le README du projet.
 
 Les SDK natifs sont destines a Windows x64. Java utilise Java22+ (Kotlin passe par le SDK Java). Flutter utilise le SDK Dart ; le chargement de la DLL doit etre configure dans l application. AutoHotInterceptor .NET utilise .NET Framework4.8.
 
-| Langage / registre | Disponibilite | Installation / utilisation |
-| --- | --- | --- |
-| C++ / vcpkg | Registre TitanCSA disponible (configuration ci-dessous) | `vcpkg install titan-audio-link:x64-windows` |
-| C++ / Conan | Registre TitanCSA disponible (configuration ci-dessous) | `conan install --requires=titan-audio-link/0.1.1 -r titancsa --build=missing -s compiler.cppstd=17` |
-| C++ / NuGet natif | Publie et verifie | `Install-Package Titan-Audio-Link.Native -Version 0.1.1` |
-| C# / .NET | Publie et verifie | `dotnet add package TitanAudioLink.SDK --version 1.0.0` |
-| Python / pip | Pas encore disponible / validation en cours | Commande prevue apres publication : `python -m pip install titan-audio-link==1.0.0` |
-| Python / Conda | Canal TitanCSA disponible ; acceptation conda-forge encore en attente | `conda install --override-channels -c https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel -c conda-forge titan-audio-link` |
-| Rust / Cargo | Publie et verifie | `cargo add titan-audio-link@1.0.0` |
-| JavaScript et TypeScript / npm | Pas encore disponible / validation en cours | Commande prevue apres publication : `npm install titan-audio-link@1.0.0` |
-| Java et Kotlin / Maven Central | Publie et verifie | `io.github.titancsa:titan-audio-link:1.0.0 (pom.xml / Gradle)` |
-| Java et Kotlin / JitPack | Publie et verifie | `com.github.titanfyre:Titan-Audio-Link:java-sdk-v1.0.0 (avec le depot JitPack)` |
-| Go / Go Modules | Publie et verifie | `go get github.com/titanfyre/Titan-Audio-Link/Titan-Audio-Link-Go-modules@v1.0.0` |
-| Go / pkg.go.dev | Publie et verifie | `Documentation : https://pkg.go.dev/github.com/titanfyre/Titan-Audio-Link/Titan-Audio-Link-Go-modules@v1.0.0` |
-| PowerShell / Gallery | Publie et verifie | `Install-Module TitanAudioLink -RequiredVersion 1.0.0 -Scope CurrentUser` |
-| Dart et Flutter / pub.dev | Pas encore disponible / validation en cours | Commande prevue apres publication : `dart pub add titan_audio_link:1.0.0` |
-| Ruby / RubyGems | Publie et verifie | `gem install titan-audio-link -v 1.0.0` |
-| PHP / Composer | Pas encore disponible / validation en cours | Commande prevue apres publication : `composer require titancsa/titan-audio-link:1.0.0` |
+| Paquet | Registre | Disponibilite | Installation / utilisation |
+| --- | --- | --- | --- |
+| `titan-audio-link` | vcpkg | Registre TitanCSA disponible (configuration ci-dessous) | `vcpkg install titan-audio-link:x64-windows` |
+| `titan-audio-link` | Conan | Registre TitanCSA disponible (configuration ci-dessous) | `conan install --requires=titan-audio-link/0.1.1 -r titancsa --build=missing -s compiler.cppstd=17` |
+| `Titan-Audio-Link.Native` | NuGet | Publie et verifie | `Install-Package Titan-Audio-Link.Native -Version 0.1.1` |
+| `TitanAudioLink.SDK` | NuGet | Publie et verifie | `dotnet add package TitanAudioLink.SDK --version 1.0.0` |
+| `titan_audio_link` | PyPI | Pas encore disponible / validation en cours | Commande prevue apres publication : `python -m pip install titan-audio-link==1.0.0` |
+| `titan-audio-link` | Conda | Canal TitanCSA disponible ; acceptation conda-forge encore en attente | `conda install --override-channels -c https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel -c conda-forge titan-audio-link` |
+| `titan_audio_link` | crates.io | Publie et verifie | `cargo add titan-audio-link@1.0.0` |
+| `titan_audio_link` | npm | Pas encore disponible / validation en cours | Commande prevue apres publication : `npm install titan-audio-link@1.0.0` |
+| `io.github.titancsa:titan-audio-link` | Maven Central | Publie et verifie | `io.github.titancsa:titan-audio-link:1.0.0 (pom.xml / Gradle)` |
+| `com.github.titanfyre:Titan-Audio-Link` | JitPack | Publie et verifie | `com.github.titanfyre:Titan-Audio-Link:java-sdk-v1.0.0 (avec le depot JitPack)` |
+| `github.com/titanfyre/Titan-Audio-Link/Titan-Audio-Link-Go-modules` | Go Modules | Publie et verifie | `go get github.com/titanfyre/Titan-Audio-Link/Titan-Audio-Link-Go-modules@v1.0.0` |
+| `github.com/titanfyre/Titan-Audio-Link/Titan-Audio-Link-Go-modules` | pkg.go.dev | Publie et verifie | `Documentation : https://pkg.go.dev/github.com/titanfyre/Titan-Audio-Link/Titan-Audio-Link-Go-modules@v1.0.0` |
+| `titan_audio_link` | PowerShell Gallery | Publie et verifie | `Install-Module TitanAudioLink -RequiredVersion 1.0.0 -Scope CurrentUser` |
+| `titan_audio_link` | pub.dev | Pas encore disponible / validation en cours | Commande prevue apres publication : `dart pub add titan_audio_link:1.0.0` |
+| `titan_audio_link` | RubyGems | Publie et verifie | `gem install titan-audio-link -v 1.0.0` |
+| `titan_audio_link` | Packagist | Pas encore disponible / validation en cours | Commande prevue apres publication : `composer require titancsa/titan-audio-link:1.0.0` |
 
-## C et C++
+## Configuration vcpkg et Conan
 
 Les sources et headers C / C++ sont dans le dossier central de ce projet. Les headers C se trouvent dans les dossiers `*-C-ffi` ou `*-C-json` (Interceptor-MultiLang : `native/`). Les paquets natifs C++ et la disponibilite du bridge C sont distincts ; consulte leur README avant de lier une application C.
 
@@ -56,7 +56,7 @@ conan remote add titancsa ./sdk-packages/conan-index -t local-recipes-index
 
 Execute ensuite la commande Conan du tableau. Ce registre construit les bibliotheques depuis leurs sources ; il est distinct de ConanCenter. La commande NuGet native s execute dans la console du gestionnaire de packages de Visual Studio.
 
-## Java et Kotlin
+## Configuration Maven et JitPack
 
 Dans le bloc `<dependencies>` de ton `pom.xml` :
 
