@@ -1,0 +1,33 @@
+{
+  "name": "titan-audio-link",
+  "version": "1.0.0",
+  "description": "Direct Windows x64 Titan-Audio-Link JavaScript and TypeScript SDK",
+  "license": "MIT",
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "index.cjs",
+  "types": "index.d.ts",
+  "files": [
+    "index.cjs",
+    "index.d.ts",
+    "prebuilds/",
+    "docs/",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/titanfyre/Titan-Audio-Link.git",
+    "directory": "Titan-Audio-Link-JavaScript-npm"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

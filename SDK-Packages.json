@@ -68,6 +68,14 @@
       "distribution": "Documented native SDK; registry receipt tracked independently"
     },
     {
+      "directory": "Titan-Audio-Link-JavaScript-npm",
+      "language": "JavaScript",
+      "registry": "npm",
+      "name": "titan-audio-link",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
       "directory": "Titan-Audio-Link-NET-nuget",
       "language": "NET",
       "registry": "nuget",
