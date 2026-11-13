@@ -203,7 +203,7 @@
       "api_prefix": "titan_audio_link_json_"
     },
     "JavaScript/npm": {
-      "status": "awaiting_browser_publication_authentication",
+      "status": "registry_publication_requires_action",
       "name": "titan-audio-link",
       "version": "1.0.0",
       "directory": "Titan-Audio-Link-JavaScript-npm",

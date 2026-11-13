@@ -11,7 +11,7 @@ Current source layout and registry coverage. A GitHub download is distinct from 
 | Python/pypi | built_fixture_and_production_verified | titan-audio-link [Source](Titan-Audio-Link-Python-pypi/) |
 | Python/conda-forge | custom_channel_install_verified_requires_conda_forge_review | [titan-audio-link](https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel) [Source](packaging/conda/) |
 | Rust/cargo | published_install_verified | [titan-audio-link](https://crates.io/crates/titan-audio-link) [Source](Titan-Audio-Link-Rust-cargo/) |
-| JavaScript/npm | awaiting_browser_publication_authentication | [titan-audio-link](https://www.npmjs.com/package/titan-audio-link) [Source](Titan-Audio-Link-JavaScript-npm/) |
+| JavaScript/npm | registry_publication_requires_action | [titan-audio-link](https://www.npmjs.com/package/titan-audio-link) [Source](Titan-Audio-Link-JavaScript-npm/) |
 | Java/maven | published_install_verified | [titan-audio-link](https://central.sonatype.com/artifact/io.github.titancsa/titan-audio-link/1.0.0) [Source](Titan-Audio-Link-Java-maven/) |
 | Java/jitpack | published_install_verified | [titan-audio-link](https://jitpack.io/#titanfyre/Titan-Audio-Link/java-sdk-v1.0.0) [Source](Titan-Audio-Link-Java-maven/) |
 | Go/modules | published_install_verified | [titan-audio-link](https://pkg.go.dev/github.com/titanfyre/Titan-Audio-Link/Titan-Audio-Link-Go-modules@v1.0.0) [Source](Titan-Audio-Link-Go-modules/) |
