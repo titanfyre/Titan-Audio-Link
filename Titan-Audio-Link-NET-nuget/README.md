@@ -1,8 +1,6 @@
 # Titan-Audio-Link .NET8 SDK
 
-Package ID `TitanAudioLink.SDK`. NuGet upload remains on hold at owner request.
-
-```csharp
+Package ID `TitanAudioLink.SDK`. ```csharp
 using var client=new TitanCSA.Products.TitanAudioLink.Client();
 string statusJson=client.Call("list", "{}");
 ```
