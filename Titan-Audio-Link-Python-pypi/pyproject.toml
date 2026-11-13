@@ -1,0 +1,18 @@
+[build-system]
+requires=["setuptools>=77","wheel>=0.43"]
+build-backend="setuptools.build_meta"
+[project]
+name="titan-audio-link"
+version="1.0.0"
+description="Windows x64 Titan-Audio-Link direct SDK"
+requires-python=">=3.10"
+license="MIT"
+readme="README.md"
+[project.urls]
+Repository="https://github.com/titanfyre/Titan-Audio-Link"
+[tool.setuptools]
+packages=["titan_audio_link"]
+[tool.setuptools.package-data]
+titan_audio_link=["*.dll"]
+[tool.setuptools.data-files]
+"share/titan-audio-link/docs"=["docs/*","LICENSE"]

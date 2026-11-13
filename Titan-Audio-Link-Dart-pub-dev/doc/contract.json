@@ -1,0 +1,1 @@
+[{"operation": "check", "arguments": {"frames": 2, "channels": 2, "samples": [0, 0, 0, 0]}, "expected_key": "valid", "expected_value": true}]

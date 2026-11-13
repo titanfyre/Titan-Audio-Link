@@ -12,6 +12,76 @@
         ]
       },
       "distribution": "Shared native source; registry publication is reported separately below"
+    },
+    {
+      "directory": "Titan-Audio-Link-C-ffi",
+      "distribution": "Native C ABI adapter to the original project SDK",
+      "dll": "TitanAudioLinkJsonSDK.dll",
+      "api_prefix": "titan_audio_link_json_"
+    },
+    {
+      "directory": "Titan-Audio-Link-Python-pypi",
+      "language": "Python",
+      "registry": "pypi",
+      "name": "titan-audio-link",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
+      "directory": "Titan-Audio-Link-Ruby-rubygems",
+      "language": "Ruby",
+      "registry": "rubygems",
+      "name": "titan-audio-link",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
+      "directory": "Titan-Audio-Link-Go-modules",
+      "language": "Go",
+      "registry": "modules",
+      "name": "titan-audio-link",
+      "version": "v1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
+      "directory": "Titan-Audio-Link-Rust-cargo",
+      "language": "Rust",
+      "registry": "cargo",
+      "name": "titan-audio-link",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
+      "directory": "Titan-Audio-Link-Java-maven",
+      "language": "Java",
+      "registry": "maven",
+      "name": "titan-audio-link",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
+      "directory": "Titan-Audio-Link-Dart-pub-dev",
+      "language": "Dart",
+      "registry": "pub-dev",
+      "name": "titan_audio_link",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
+      "directory": "Titan-Audio-Link-NET-nuget",
+      "language": "NET",
+      "registry": "nuget",
+      "name": "TitanAudioLink.SDK",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
+      "directory": "Titan-Audio-Link-PowerShell-gallery",
+      "language": "PowerShell",
+      "registry": "gallery",
+      "name": "TitanAudioLink",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
     }
   ],
   "notes": "Registry accounts or community acceptance are separate. No missing language binding is represented as implemented.",

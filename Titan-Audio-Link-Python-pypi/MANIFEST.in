@@ -1,0 +1,3 @@
+include README.md LICENSE
+recursive-include titan_audio_link *.py *.dll
+recursive-include docs *
