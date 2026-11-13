@@ -3,99 +3,63 @@
   "packages": [
     {
       "directory": "packaging/native",
-      "build_system": "CMake",
-      "registry_recipes": {
-        "vcpkg": "packaging/native/portfile.cmake",
-        "Conan": "packaging/native/conanfile.py",
-        "NuGet": [
-          "packaging/native/TitanCSA.TitanAudioLink.Native.nuspec"
-        ]
-      },
-      "distribution": "Shared native source; registry publication is reported separately below"
+      "source_url": "https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-Audio-Link/packaging/native",
+      "location": "central_sdk_repository"
     },
     {
       "directory": "Titan-Audio-Link-C-ffi",
-      "distribution": "Native C ABI adapter to the original project SDK",
-      "dll": "TitanAudioLinkJsonSDK.dll",
-      "api_prefix": "titan_audio_link_json_"
+      "source_url": "https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-Audio-Link/Titan-Audio-Link-C-ffi",
+      "location": "central_sdk_repository"
     },
     {
       "directory": "Titan-Audio-Link-Python-pypi",
-      "language": "Python",
-      "registry": "pypi",
-      "name": "titan-audio-link",
-      "version": "1.0.0",
-      "distribution": "Documented native SDK; registry receipt tracked independently"
+      "source_url": "https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-Audio-Link/Titan-Audio-Link-Python-pypi",
+      "location": "central_sdk_repository"
     },
     {
       "directory": "Titan-Audio-Link-Ruby-rubygems",
-      "language": "Ruby",
-      "registry": "rubygems",
-      "name": "titan-audio-link",
-      "version": "1.0.0",
-      "distribution": "Documented native SDK; registry receipt tracked independently"
+      "source_url": "https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-Audio-Link/Titan-Audio-Link-Ruby-rubygems",
+      "location": "central_sdk_repository"
     },
     {
       "directory": "Titan-Audio-Link-Go-modules",
-      "language": "Go",
-      "registry": "modules",
-      "name": "titan-audio-link",
-      "version": "v1.0.0",
-      "distribution": "Documented native SDK; registry receipt tracked independently"
+      "source_url": "https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-Audio-Link/Titan-Audio-Link-Go-modules",
+      "location": "central_sdk_repository"
     },
     {
       "directory": "Titan-Audio-Link-Rust-cargo",
-      "language": "Rust",
-      "registry": "cargo",
-      "name": "titan-audio-link",
-      "version": "1.0.0",
-      "distribution": "Documented native SDK; registry receipt tracked independently"
+      "source_url": "https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-Audio-Link/Titan-Audio-Link-Rust-cargo",
+      "location": "central_sdk_repository"
     },
     {
       "directory": "Titan-Audio-Link-Java-maven",
-      "language": "Java",
-      "registry": "maven",
-      "name": "titan-audio-link",
-      "version": "1.0.0",
-      "distribution": "Documented native SDK; registry receipt tracked independently"
+      "source_url": "https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-Audio-Link/Titan-Audio-Link-Java-maven",
+      "location": "central_sdk_repository"
     },
     {
       "directory": "Titan-Audio-Link-Dart-pub-dev",
-      "language": "Dart",
-      "registry": "pub-dev",
-      "name": "titan_audio_link",
-      "version": "1.0.0",
-      "distribution": "Documented native SDK; registry receipt tracked independently"
+      "source_url": "https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-Audio-Link/Titan-Audio-Link-Dart-pub-dev",
+      "location": "central_sdk_repository"
     },
     {
       "directory": "Titan-Audio-Link-JavaScript-npm",
-      "language": "JavaScript",
-      "registry": "npm",
-      "name": "titan-audio-link",
-      "version": "1.0.0",
-      "distribution": "Documented native SDK; registry receipt tracked independently"
+      "source_url": "https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-Audio-Link/Titan-Audio-Link-JavaScript-npm",
+      "location": "central_sdk_repository"
     },
     {
       "directory": "Titan-Audio-Link-NET-nuget",
-      "language": "NET",
-      "registry": "nuget",
-      "name": "TitanAudioLink.SDK",
-      "version": "1.0.0",
-      "distribution": "Documented native SDK; registry receipt tracked independently"
+      "source_url": "https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-Audio-Link/Titan-Audio-Link-NET-nuget",
+      "location": "central_sdk_repository"
     },
     {
       "directory": "Titan-Audio-Link-PowerShell-gallery",
-      "language": "PowerShell",
-      "registry": "gallery",
-      "name": "TitanAudioLink",
-      "version": "1.0.0",
-      "distribution": "Documented native SDK; registry receipt tracked independently"
+      "source_url": "https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-Audio-Link/Titan-Audio-Link-PowerShell-gallery",
+      "location": "central_sdk_repository"
     },
     {
       "directory": "packaging/conda",
-      "language": "Python",
-      "registry": "conda-forge",
-      "distribution": "Source-build recipe; official review and custom channel availability reported separately"
+      "source_url": "https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-Audio-Link/packaging/conda",
+      "location": "central_sdk_repository"
     }
   ],
   "notes": "Registry accounts or community acceptance are separate. No missing language binding is represented as implemented.",
@@ -185,8 +149,7 @@
       "recipe_format": "v1",
       "v1_source_build_tests_passed": true,
       "personal_maintainer_confirmation_required": true,
-      "official_review_status": "v1_recipe_prepared_requires_submission_or_existing_pr_update",
-      "github_directory": "packaging/conda"
+      "official_review_status": "v1_recipe_prepared_requires_submission_or_existing_pr_update"
     },
     "Rust/cargo": {
       "status": "published_install_verified",
@@ -315,5 +278,8 @@
       "repository": "https://github.com/TitanCSA/titan-audio-link-php"
     }
   },
-  "coverage_note": "Missing language bindings are explicitly listed. Published GitHub archives are distinct from central registry acceptance. Local organized SDK folders are retained."
+  "coverage_note": "SDK source directories moved to central repository. Product source, prior tags and original releases are separate.",
+  "central_sdk_repository": "https://github.com/TitanCSA/sdk-packages",
+  "central_sdk_directory": "projects/Titan-Audio-Link",
+  "central_sdk_source_commit": "5da8260cfafc42181dbcca6196868d049f2b3ebb"
 }
