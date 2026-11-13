@@ -90,6 +90,12 @@
       "name": "TitanAudioLink",
       "version": "1.0.0",
       "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
+      "directory": "packaging/conda",
+      "language": "Python",
+      "registry": "conda-forge",
+      "distribution": "Source-build recipe; official review and custom channel availability reported separately"
     }
   ],
   "notes": "Registry accounts or community acceptance are separate. No missing language binding is represented as implemented.",
@@ -101,7 +107,7 @@
     "CPP/vcpkg": {
       "status": "published_custom_registry",
       "registry": "https://github.com/TitanCSA/vcpkg-registry",
-      "baseline": "33fd43f72d7137f6ebaac4c1eeab001f66bf3a98",
+      "baseline": "9a706cf6992544778eb26a8b4244e303292f1ce6",
       "port": "titan-audio-link",
       "microsoft_curated_registry": false,
       "legacy_port": "titan-audio-link-sdk",
@@ -114,6 +120,8 @@
       "status": "public_recipe_builds_locally",
       "conan_center": false,
       "directory": "Titan-Audio-Link-CPP-conan",
+      "local_recipe_consumer_verified": true,
+      "minimum_cppstd": 17,
       "github_directory": "packaging/native"
     },
     "CPP/nuget": {
@@ -122,46 +130,179 @@
       "version": "0.1.1",
       "registry_published": false,
       "consumer_build_verified": true,
-      "documentation_bundled": true
+      "documentation_bundled": true,
+      "publication_on_hold_by_owner": true
     },
     "NET/nuget": {
-      "status": "binding_not_implemented"
+      "status": "built_verified_publication_on_hold_by_owner",
+      "name": "TitanAudioLink.SDK",
+      "version": "1.0.0",
+      "directory": "Titan-Audio-Link-NET-nuget",
+      "registry_published": false,
+      "documentation_bundled": true,
+      "url": null,
+      "public_consumer_verified": false,
+      "module": "titan_audio_link",
+      "dll_name": "TitanAudioLinkJsonSDK.dll",
+      "api_prefix": "titan_audio_link_json_",
+      "publication_on_hold_by_owner": true
     },
     "Python/pypi": {
-      "status": "binding_not_implemented"
+      "status": "built_fixture_and_production_verified",
+      "name": "titan-audio-link",
+      "version": "1.0.0",
+      "directory": "Titan-Audio-Link-Python-pypi",
+      "registry_published": false,
+      "documentation_bundled": true,
+      "url": null,
+      "public_consumer_verified": false,
+      "module": "titan_audio_link",
+      "dll_name": "TitanAudioLinkJsonSDK.dll",
+      "api_prefix": "titan_audio_link_json_"
     },
     "Python/conda-forge": {
-      "status": "binding_not_implemented"
+      "status": "built_tested_requires_source_publication_and_official_review",
+      "name": "titan-audio-link",
+      "version": "1.0.0",
+      "directory": "Titan-Audio-Link-Python-conda-forge",
+      "registry_published": false,
+      "documentation_bundled": true,
+      "url": null,
+      "public_consumer_verified": false,
+      "module": "titan_audio_link",
+      "dll_name": "TitanAudioLinkJsonSDK.dll",
+      "api_prefix": "titan_audio_link_json_",
+      "recipe_format": "v1",
+      "v1_source_build_tests_passed": true,
+      "personal_maintainer_confirmation_required": true,
+      "official_review_status": "v1_recipe_prepared_requires_submission_or_existing_pr_update",
+      "github_directory": "packaging/conda"
     },
     "Rust/cargo": {
-      "status": "binding_not_implemented"
+      "status": "published_install_verified",
+      "name": "titan-audio-link",
+      "version": "1.0.0",
+      "directory": "Titan-Audio-Link-Rust-cargo",
+      "registry_published": true,
+      "documentation_bundled": true,
+      "url": "https://crates.io/crates/titan-audio-link",
+      "public_consumer_verified": true,
+      "module": "titan_audio_link",
+      "dll_name": "TitanAudioLinkJsonSDK.dll",
+      "api_prefix": "titan_audio_link_json_"
     },
     "JavaScript/npm": {
-      "status": "binding_not_implemented"
+      "status": "awaiting_browser_publication_authentication",
+      "name": "titan-audio-link",
+      "version": "1.0.0",
+      "directory": "Titan-Audio-Link-JavaScript-npm",
+      "registry_published": false,
+      "documentation_bundled": true,
+      "url": "https://www.npmjs.com/package/titan-audio-link",
+      "public_consumer_verified": false,
+      "module": "titan_audio_link",
+      "dll_name": "TitanAudioLinkJsonSDK.dll",
+      "api_prefix": "titan_audio_link_json_"
     },
     "Java/maven": {
-      "status": "binding_not_implemented"
+      "status": "published_install_verified",
+      "name": "titan-audio-link",
+      "version": "1.0.0",
+      "directory": "Titan-Audio-Link-Java-maven",
+      "registry_published": true,
+      "documentation_bundled": true,
+      "url": "https://central.sonatype.com/artifact/io.github.titancsa/titan-audio-link/1.0.0",
+      "public_consumer_verified": true,
+      "module": "titan_audio_link",
+      "dll_name": "TitanAudioLinkJsonSDK.dll",
+      "api_prefix": "titan_audio_link_json_",
+      "coordinates": "io.github.titancsa:titan-audio-link:1.0.0",
+      "java_package": "titancsa.products.titan_audio_link"
     },
     "Java/jitpack": {
-      "status": "binding_not_implemented"
+      "status": "published_install_verified",
+      "name": "titan-audio-link",
+      "version": "java-sdk-v1.0.0",
+      "directory": "Titan-Audio-Link-Java-maven",
+      "registry_published": true,
+      "documentation_bundled": true,
+      "url": "https://jitpack.io/#titanfyre/Titan-Audio-Link/java-sdk-v1.0.0",
+      "public_consumer_verified": true,
+      "module": "titan_audio_link",
+      "dll_name": "TitanAudioLinkJsonSDK.dll",
+      "api_prefix": "titan_audio_link_json_",
+      "coordinates": "com.github.titanfyre:Titan-Audio-Link:java-sdk-v1.0.0",
+      "java_package": "titancsa.products.titan_audio_link"
     },
     "Go/modules": {
-      "status": "binding_not_implemented"
+      "status": "published_install_verified",
+      "name": "titan-audio-link",
+      "version": "v1.0.0",
+      "directory": "Titan-Audio-Link-Go-modules",
+      "registry_published": true,
+      "documentation_bundled": true,
+      "url": "https://pkg.go.dev/github.com/titanfyre/Titan-Audio-Link/Titan-Audio-Link-Go-modules@v1.0.0",
+      "public_consumer_verified": true,
+      "module": "github.com/titanfyre/Titan-Audio-Link/Titan-Audio-Link-Go-modules",
+      "dll_name": "TitanAudioLinkJsonSDK.dll",
+      "api_prefix": "titan_audio_link_json_"
     },
     "Go/pkg-go-dev": {
-      "status": "binding_not_implemented"
+      "status": "indexed_verified",
+      "url": "https://pkg.go.dev/github.com/titanfyre/Titan-Audio-Link/Titan-Audio-Link-Go-modules@v1.0.0"
     },
     "PowerShell/gallery": {
-      "status": "binding_not_implemented"
+      "status": "published_install_verified",
+      "name": "TitanAudioLink",
+      "version": "1.0.0",
+      "directory": "Titan-Audio-Link-PowerShell-gallery",
+      "registry_published": true,
+      "documentation_bundled": true,
+      "url": "https://www.powershellgallery.com/packages/TitanAudioLink/1.0.0",
+      "public_consumer_verified": true,
+      "module": "titan_audio_link",
+      "dll_name": "TitanAudioLinkJsonSDK.dll",
+      "api_prefix": "titan_audio_link_json_"
     },
     "Dart/pub-dev": {
-      "status": "binding_not_implemented"
+      "status": "built_fixture_and_production_verified",
+      "name": "titan_audio_link",
+      "version": "1.0.0",
+      "directory": "Titan-Audio-Link-Dart-pub-dev",
+      "registry_published": false,
+      "documentation_bundled": true,
+      "url": null,
+      "public_consumer_verified": false,
+      "module": "titan_audio_link",
+      "dll_name": "TitanAudioLinkJsonSDK.dll",
+      "api_prefix": "titan_audio_link_json_"
     },
     "Ruby/rubygems": {
-      "status": "binding_not_implemented"
+      "status": "published_install_verified",
+      "name": "titan-audio-link",
+      "version": "1.0.0",
+      "directory": "Titan-Audio-Link-Ruby-rubygems",
+      "registry_published": true,
+      "documentation_bundled": true,
+      "url": "https://rubygems.org/gems/titan-audio-link",
+      "public_consumer_verified": true,
+      "module": "titan_audio_link",
+      "dll_name": "TitanAudioLinkJsonSDK.dll",
+      "api_prefix": "titan_audio_link_json_"
     },
     "PHP/packagist": {
-      "status": "binding_not_implemented"
+      "status": "composer_source_and_tag_published",
+      "name": "titancsa/titan-audio-link",
+      "version": "1.0.0",
+      "directory": "Titan-Audio-Link-PHP-packagist",
+      "registry_published": false,
+      "documentation_bundled": true,
+      "url": "https://packagist.org/packages/titancsa/titan-audio-link",
+      "public_consumer_verified": false,
+      "module": "titan_audio_link",
+      "dll_name": "TitanAudioLinkJsonSDK.dll",
+      "api_prefix": "titan_audio_link_json_",
+      "repository": "https://github.com/TitanCSA/titan-audio-link-php"
     }
   },
   "coverage_note": "Missing language bindings are explicitly listed. Published GitHub archives are distinct from central registry acceptance. Local organized SDK folders are retained."
