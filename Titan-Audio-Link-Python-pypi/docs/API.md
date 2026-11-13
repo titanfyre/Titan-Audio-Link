@@ -11,4 +11,4 @@ Tests exercise synthetic wire inputs using the real production SDK validation/fo
 
 ## Language client
 
-The client calls the native SDK directly. Use the call method with an operation name and argument object. Receive is synchronous and bounded to100ms; use an application worker for responsive UI/event loops. Explicitly close the client after use. 64-bit identifiers and counters are decimal strings. Native errors expose their Windows code. Matching driver and licensing are separate requirements.
+The client calls the native SDK directly. Use the call method with an operation name and argument object. Calls are synchronous; only operations exposing a receive timeout are capped at100ms; use an application worker for responsive UI/event loops. Explicitly close the client after use. 64-bit identifiers and counters are decimal strings. Native errors expose their Windows code. Matching driver and licensing are separate requirements.
