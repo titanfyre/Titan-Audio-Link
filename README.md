@@ -122,7 +122,7 @@ Les sources, licences, guides API et exemples sont regroupes dans [le depot SDK 
 | PowerShell Gallery | `TitanAudioLink` | `Install-Module TitanAudioLink -RequiredVersion 1.0.0 -Scope CurrentUser` |
 | pub.dev | `titan_audio_link` | Commande prevue apres publication : `dart pub add titan_audio_link:1.0.0` |
 | RubyGems | `titan-audio-link` | `gem install titan-audio-link -v 1.0.0` |
-| Packagist | `titancsa/titan-audio-link` | Commande prevue apres publication : `composer require titancsa/titan-audio-link:1.0.0` |
+| Packagist | `titancsa/titan-audio-link` | `composer require titancsa/titan-audio-link:1.0.0` |
 
 Pour vcpkg et Conan, configure d abord le registre TitanCSA avec [le guide complet](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-Audio-Link/README.md). Le guide explique aussi Maven/Gradle, les prerequis et le chargement des DLL. Les pilotes/applications du produit sont installes separement. Les commandes marquees prevues ne sont pas encore disponibles.
 
