@@ -20,6 +20,8 @@ The initial native format is **48 kHz, stereo, signed 16-bit PCM**. The SDK pres
 
 ## Install and use
 
+Follow the [virtual audio pair quickstart](https://titancsa.github.io/guides/titan-audio-link-first-run/) for the pinned signed evaluation and the commercial Release link.
+
 1. Download the complete Windows x64 ZIP from [Releases](https://github.com/titanfyre/Titan-Audio-Link/releases) and extract it.
 2. Run `Dependencies\TitanAudioLinkSetup.exe` as administrator and choose **Install / reinstall**. Restart Windows only if setup requests it.
 3. Open `TitanAudioLink.exe`. Refresh the endpoint list and select the playback/recording pair.
