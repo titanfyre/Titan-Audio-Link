@@ -1,5 +1,15 @@
 # Titan Audio Link - Windows Kernel Virtual Audio I/O Driver & C++ SDK
 
+<!-- full-version-contact:start -->
+> [!IMPORTANT]
+> **Get the version without the one-hour demo limit**
+>
+> **Discord · `titancsa`**. Open [Discord](https://discord.com/app), choose **Friends → Add Friend**, enter **`titancsa`** and send a message.
+> Send the project name and ask for its full version. TitanCSA will share the purchase details privately.
+>
+> **FR · Version sans la limite d’une heure.** Ajoute **`titancsa`** sur Discord et envoie le nom du projet. Le lien d’achat est communiqué en privé.
+<!-- full-version-contact:end -->
+
 **Connect a virtual playback output to a virtual microphone input. Build repeatable audio tests and integrate virtual audio into Windows software.**
 
 Titan Audio Link provides paired Windows audio endpoints, a native desktop application, a console tool and a small C++ SDK. Send audio to the pair's playback endpoint in one application and select its recording endpoint in another. Each pair has its own kernel transport.
@@ -133,13 +143,4 @@ Les anciens imports Go et versions JitPack gardent leurs tags. Pour les ancienne
 
 ## Commercial integration and support
 
-<!-- full-version-contact:start -->
-> [!IMPORTANT]
-> **Full version and commercial licensing**
->
-> **Discord username: `titancsa`**
->
-> Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Mention **Titan Audio Link** and ask about the **full / production version, commercial use or OEM redistribution**.
->
-> Include your intended use and deployment size to discuss pricing, availability and the appropriate licensing / access instructions.
-<!-- full-version-contact:end -->
+
