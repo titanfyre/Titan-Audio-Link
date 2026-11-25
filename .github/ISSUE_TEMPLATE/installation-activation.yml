@@ -1,0 +1,45 @@
+name: Titan Audio Link setup or first use
+description: Report an installation, activation or virtual audio device problem.
+title: "[Setup] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Try the [first-run guide](https://titancsa.github.io/guides/titan-audio-link-first-run/) and search existing issues.
+        This report is public. Remove activation keys, order links and personal details. For purchase and key questions, contact `titancsa` on Discord.
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Edition
+      options:
+        - Microsoft-signed demo
+        - Commercial Release
+        - Unknown
+    validations:
+      required: true
+  - type: input
+    id: package
+    attributes:
+      label: ZIP name or demo release tag
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version and build
+      description: Use winver. Include the build number if available.
+  - type: input
+    id: driver-sdk
+    attributes:
+      label: Installed driver and SDK versions
+      description: Copy the versions from setup or your SDK package if available.
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Give the last step that worked, what you expected and whether you restarted after setup.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostic
+    attributes:
+      label: Exact error or audio devices shown
+      description: Copy the error with private details removed. For missing audio, list the Titan playback and recording devices visible in Windows Sound settings.
