@@ -1,14 +1,24 @@
 # Titan Audio Link - Windows Kernel Virtual Audio I/O Driver & C++ SDK
 
+<!-- simple-start:start -->
+Send sound from one Windows app to another through a virtual audio cable.
+
+**Try it**
+
+1. Extract the [demo ZIP](https://github.com/titanfyre/Titan-Audio-Link/releases/download/v0.2.0-demo/Titan-Audio-Link-0.2.0-Demo-Windows-x64.zip) and run **TitanAudioLinkSetup.exe** from **Installers**.
+2. Open **TitanAudioLink.exe** and select the playback and recording pair.
+3. Click **Test virtual cable**. A passing test means sound reached the recording side.
+<!-- simple-start:end -->
+
 <!-- full-version-contact:start -->
 > [!IMPORTANT]
-> **Get the version without the one-hour demo limit**
+> **Version without the one-hour demo limit**
 >
-> **Discord · `titancsa`**. Open [Discord](https://discord.com/app), choose **Friends → Add Friend**, enter **`titancsa`** and send a message.
-> Send the project name and ask for its full version. TitanCSA will share the purchase details privately.
->
-> **FR · Version sans la limite d’une heure.** Ajoute **`titancsa`** sur Discord et envoie le nom du projet. Le lien d’achat est communiqué en privé.
+> In [Discord](https://discord.com/app), choose **Add Friend** and enter **`titancsa`**. Send the project name. Purchase details are sent privately.
 <!-- full-version-contact:end -->
+
+<details>
+<summary>Project details and screenshots</summary>
 
 **Connect a virtual playback output to a virtual microphone input. Build repeatable audio tests and integrate virtual audio into Windows software.**
 
@@ -17,6 +27,8 @@ Titan Audio Link provides paired Windows audio endpoints, a native desktop appli
 > **Microsoft-signed Windows x64 demo 0.2.0.** The archive includes the application, SDK, examples and both installers. The one-hour allowance starts with the first successful capture in a Windows boot. Check [validation status](docs/VALIDATION.md) for exercised platforms and remaining production qualification. No WHQL certification, universal compatibility or zero-latency claim is made.
 
 ![Native application in explicitly labelled offline preview mode](docs/app.png)
+
+</details>
 
 ## What you can do
 
@@ -30,7 +42,6 @@ The initial native format is **48 kHz, stereo, signed 16-bit PCM**. The SDK pres
 
 ## Install and use
 
-Follow the [virtual audio pair quickstart](https://titancsa.github.io/guides/titan-audio-link-first-run/) for the exact signed demo, its Windows 11 validation and the commercial Release.
 
 1. Download the [signed demo 0.2.0 ZIP](https://github.com/titanfyre/Titan-Audio-Link/releases/tag/v0.2.0-demo) for Windows x64 and extract it.
 2. Run `Installers\TitanAudioLinkSetup.exe` as administrator and choose **Install / reinstall**. Restart Windows only if setup requests it.
@@ -142,5 +153,3 @@ Les anciens imports Go et versions JitPack gardent leurs tags. Pour les ancienne
 <!-- central-sdk-packages:end -->
 
 ## Commercial integration and support
-
-
