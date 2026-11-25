@@ -67,6 +67,8 @@ Preview mode uses clearly labelled synthetic data. A normal inventory is read-on
 
 ## Minimal C++ use
 
+**First SDK check.** Extract the [starter ZIP](https://titancsa.github.io/downloads/first-sdk-checks.zip) and run `python scripts/test_first_sdk.py titan-audio-link --run` from that folder. It counts Titan audio endpoints without playing or recording sound. [Tools required](https://titancsa.github.io/guides/installer-and-sdk/).
+
 Add `SDK/AudioLink.h` and `SDK/AudioLink.cpp` to a Windows x64 C++17 project. Link `ole32`, `uuid`, `propsys`, `cfgmgr32` and `avrt`. No WDK or kernel source is needed to build the application.
 
 ```cpp
