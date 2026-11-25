@@ -25,9 +25,17 @@ Observed render-submission-to-capture timestamps across both campaigns ranged fr
 
 Dedicated private ETW traces contained 21 product stop-summary records per campaign. Their DMA-loss, ring-missing, ring-drop and skipped-packet counters were all zero; the trace headers reported no lost events or buffers. These counters cover the observed streams, not every possible failure or an extended soak test.
 
-Windows 11, HVCI/Secure Boot, broader installer recovery and extended audio soak tests remain separate qualification gates. An earlier candidate failed Driver Verifier; its crash evidence and the other failed experiments are retained privately. Their results are not replaced by the successful current-image campaigns. No unsigned driver or lab certificate is supplied in the public ZIP.
+For this test-signed submission image, the Windows 11, HVCI/Secure Boot, installer-recovery and extended soak checks remain separate. An earlier candidate failed Driver Verifier; its crash evidence and the other failed experiments are retained privately. Their results are not replaced by the successful current-image campaigns. No unsigned driver or lab certificate is supplied in the public ZIP.
 
 The release notes will identify actual tests and any remaining blockers. A sample waveform or sample-mode screenshot is never evidence of live kernel transport.
+
+## Signed 0.2.0 demo on Windows 11
+
+The exact published demo ZIP installed driver 0.2.0.0 in a Windows 11 build 26100 x64 Hyper-V guest with Secure Boot enabled. The installed INF, driver, clock and trusted Microsoft catalog matched the ZIP manifest. Setup and the bundled console tool verified one started playback/recording pair.
+
+The generated-signal test verified 72,000 complete stereo frames with both channels matched and correlation 1.000000. It reported one WASAPI discontinuity flag and zero timestamp errors. Uninstall removed the pair, and the subsequent inventory found no Titan Audio Link endpoints. This run covered a short signal on one pair. The older 0.1.1 campaign below covers different scenarios.
+
+[Exact demo release and SHA-256](https://github.com/titanfyre/Titan-Audio-Link/releases/tag/v0.2.0-demo) | [First-run guide](https://titancsa.github.io/guides/titan-audio-link-first-run/)
 
 ## Measurement boundaries
 
