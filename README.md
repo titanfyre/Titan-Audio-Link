@@ -1,4 +1,4 @@
-# Titan Audio Link - Windows Kernel Virtual Audio I/O Driver & C++ SDK
+# Titan Audio Link
 
 <!-- simple-start:start -->
 Send sound from one Windows app to another through a virtual audio cable.
