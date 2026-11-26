@@ -3,7 +3,7 @@
 <!-- simple-start:start -->
 Send sound from one Windows app to another through a virtual audio cable.
 
-[First steps](#first-steps) · [Develop](#sdk-and-packages) · [Maintain](https://github.com/TitanCSA/sdk-packages/blob/main/CONTRIBUTING.md)
+[First steps](#first-steps) · [Guide en français](https://titancsa.github.io/fr/micro-virtuel-titan-audio-link/) · [Develop](#sdk-and-packages) · [Maintain](https://github.com/TitanCSA/sdk-packages/blob/main/CONTRIBUTING.md)
 
 ## First steps
 
