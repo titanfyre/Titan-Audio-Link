@@ -55,6 +55,8 @@ The initial native format is **48 kHz, stereo, signed 16-bit PCM**. The SDK pres
 
 Endpoints are deliberately excluded from Windows default-device selection. Select them explicitly in each application. This also means they cannot be selected as system or communications defaults in this edition. Your physical speakers and microphone remain separate devices.
 
+Using OBS Studio? [Set up its audio input and try the demo tone](https://titancsa.github.io/guides/titan-audio-link-obs/) · [Guide en français](https://titancsa.github.io/fr/audio-application-obs/).
+
 The application and normal WASAPI streaming do not require administrator rights. Installation, adding pairs and removing them require elevation. Windows microphone privacy permissions can still affect a virtual recording endpoint: allow desktop microphone access in Windows settings if your intended application is denied access.
 
 The setup console supports `/install`, `/uninstall`, `/add-pair` and `/remove-pair <instance-id>`. It manages only this product's root devices and matching driver packages. Up to four pairs can be managed; a pending restart is reported rather than forced. Uninstall removes the owned pairs. The application does not silently create, delete or reconfigure audio devices.
