@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please include the release tag or commit and edition you used when citing this repository."
+title: "Titan Audio Link"
+type: software
+authors:
+  - name: TitanCSA
+repository-code: https://github.com/titanfyre/Titan-Audio-Link
+url: https://titancsa.github.io/guides/titan-audio-link-first-run/
+abstract: "Windows virtual audio cable with paired playback and recording endpoints, a desktop application and a C++ SDK."
