@@ -9,7 +9,7 @@ Send sound from one Windows app to another through a virtual audio cable.
 
 **64-bit Windows 10 version 2004 or later, or Windows 11.**
 
-1. Extract the [demo ZIP](https://github.com/titanfyre/Titan-Audio-Link/releases/download/v0.2.0-demo/Titan-Audio-Link-0.2.0-Demo-Windows-x64.zip) and run **TitanAudioLinkSetup.exe** from **Installers**. Restart Windows if requested.
+1. Extract the [demo ZIP](https://github.com/titanfyre/Titan-Audio-Link/releases/download/v0.2.0-demo-r2/Titan-Audio-Link-0.2.0-Demo-r2-Windows-x64.zip) and run **TitanAudioLinkSetup.exe** from **Installers**. Restart Windows if requested.
 2. Open **TitanAudioLink.exe** and select the playback and recording pair.
 3. Click **Test virtual cable**. A passing test means sound reached the recording side.
 <!-- simple-start:end -->
@@ -28,7 +28,7 @@ Send sound from one Windows app to another through a virtual audio cable.
 
 Titan Audio Link provides paired Windows audio endpoints, a native desktop application, a console tool and a small C++ SDK. Send audio to the pair's playback endpoint in one application and select its recording endpoint in another. Each pair has its own kernel transport.
 
-> **Microsoft-signed Windows x64 demo 0.2.0.** The archive includes the application, SDK, examples and both installers. The one-hour allowance starts with the first successful capture in a Windows boot. Check [validation status](docs/VALIDATION.md) for exercised platforms and remaining production qualification. No WHQL certification, universal compatibility or zero-latency claim is made.
+> **Windows x64 demo 0.2.0 r2.** The archive includes the Microsoft-signed driver, application, SDK, examples and both installers. The one-hour allowance starts with the first successful capture in a Windows boot. Check [validation status](docs/VALIDATION.md) for exercised platforms and remaining production qualification. [Package revision evidence](https://titancsa.github.io/assets/titan-audio-link-demo-archive-revision-2026-11-27.json).
 
 ![Native application in explicitly labelled offline preview mode](docs/app.png)
 
@@ -47,7 +47,7 @@ The initial native format is **48 kHz, stereo, signed 16-bit PCM**. The SDK pres
 ## Install and use
 
 
-1. Download the [signed demo 0.2.0 ZIP](https://github.com/titanfyre/Titan-Audio-Link/releases/tag/v0.2.0-demo) for Windows x64 and extract it.
+1. Download the [demo 0.2.0 r2 ZIP](https://github.com/titanfyre/Titan-Audio-Link/releases/tag/v0.2.0-demo-r2) for Windows x64 and extract it.
 2. Run `Installers\TitanAudioLinkSetup.exe` as administrator and choose **Install / reinstall**. Restart Windows only if setup requests it.
 3. Open `TitanAudioLink.exe`. Refresh the endpoint list and select the playback/recording pair.
 4. In the source application's output settings, select the **Titan Audio Link playback endpoint**. In the receiving application's input settings, select the corresponding Titan Audio Link recording endpoint. Windows can prefix their names with localized labels such as **Line** and **Line In**, and numbers distinguish additional adapters. The application pairs them by their adapter identity, not just their display names.
@@ -127,7 +127,7 @@ For virtual audio in your software, a branded package, reproducible audio QA fix
 
 See [commercial integration](docs/COMMERCIAL.md) for the pilot and delivery process.
 
-The application and its original user-mode SDK are MIT licensed. The prebuilt driver has separate terms and incorporates Microsoft sample components under MS-PL. See the [third-party notices](THIRD-PARTY-NOTICES.md) and [file-specific source license map](driver/LICENSE-MAP.txt). The signed 0.2.0 ZIP includes its license and third-party notices. It runs the one-hour demo locally without an activation key.
+The application and its original user-mode SDK are MIT licensed. The prebuilt driver has separate terms and incorporates Microsoft sample components under MS-PL. See the [third-party notices](THIRD-PARTY-NOTICES.md) and [file-specific source license map](driver/LICENSE-MAP.txt). The demo ZIP includes its license and third-party notices. It runs the one-hour demo locally without an activation key.
 
 Use the software only for authorized audio routing and testing. No illegal or unauthorized use is endorsed. Software is provided AS IS under its applicable license; users remain responsible for their actions, subject to applicable law.
 

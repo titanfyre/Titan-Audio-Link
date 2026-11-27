@@ -1,0 +1,12 @@
+Titan Audio Link Demo for Windows 10 version 2004 or later and Windows 11 x64
+
+1. Extract this ZIP.
+2. Open Installers\TitanAudioLinkSetup.exe and follow the setup prompts.
+3. Open TitanAudioLink.exe and click Test virtual cable to check a playback and recording pair.
+
+The first successful capture starts 60 minutes for the current Windows boot.
+Use Windows Restart to start a new demo session.
+
+English guide: https://titancsa.github.io/guides/titan-audio-link-first-run/
+Guide en français: https://titancsa.github.io/fr/micro-virtuel-titan-audio-link/
+Version without the one-hour demo limit: contact titancsa on Discord.
