@@ -127,7 +127,7 @@ For virtual audio in your software, a branded package, reproducible audio QA fix
 
 See [commercial integration](docs/COMMERCIAL.md) for the pilot and delivery process.
 
-The application and its original user-mode SDK are MIT licensed. The prebuilt driver has separate terms and incorporates Microsoft sample components under MS-PL; see [third-party notices](THIRD-PARTY-NOTICES.md). The published `driver/Driver/**` source files, including Titan changes in those files, retain MS-PL; see [the file-specific license map](driver/LICENSE-MAP.txt). The download includes `BINARY-LICENSE.txt` evaluation terms, the full MS-PL license and third-party notices. This evaluation build does not implement an enforced timer or online licensing. Existing Interceptor/Vdevice activation keys do not activate this driver.
+The application and its original user-mode SDK are MIT licensed. The prebuilt driver has separate terms and incorporates Microsoft sample components under MS-PL. See the [third-party notices](THIRD-PARTY-NOTICES.md) and [file-specific source license map](driver/LICENSE-MAP.txt). The signed 0.2.0 ZIP includes its license and third-party notices. It runs the one-hour demo locally without an activation key.
 
 Use the software only for authorized audio routing and testing. No illegal or unauthorized use is endorsed. Software is provided AS IS under its applicable license; users remain responsible for their actions, subject to applicable law.
 

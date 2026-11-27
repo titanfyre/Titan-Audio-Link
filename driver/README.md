@@ -1,6 +1,6 @@
 # Titan-Audio-Link driver source
 
-Evaluation / engineering-preview source. The existing code has no technical trial timer or commercial activation system. This package does not enforce a timed evaluation cutoff.
+This directory contains the engineering-preview driver source. Its build instructions apply to the unsigned local output. For the current Windows x64 demo, use the [signed 0.2.0 ZIP](https://github.com/titanfyre/Titan-Audio-Link/releases/tag/v0.2.0-demo). That ZIP includes the demo clock and starts the one-hour allowance with the first successful capture in a Windows boot.
 
 ## Build
 

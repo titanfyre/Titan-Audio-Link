@@ -37,6 +37,8 @@ The generated-signal test verified 72,000 complete stereo frames with both chann
 
 [Exact demo release and SHA-256](https://github.com/titanfyre/Titan-Audio-Link/releases/tag/v0.2.0-demo) | [First-run guide](https://titancsa.github.io/guides/titan-audio-link-first-run/)
 
+With the updated 0.2.0 ZIP, Windows 11 also passed installation, stereo capture and complete removal with Secure Boot and Memory Integrity enabled. In a separate Windows 11 test, OBS Studio 33.0.3 measured silence, the demo's 440 Hz tone and then silence on the Titan capture endpoint. The OBS test measured the input meter. [Memory Integrity report](https://titancsa.github.io/assets/titan-audio-link-memory-integrity-2026-11-26.json) · [OBS report](https://titancsa.github.io/assets/titan-audio-link-obs-check-2026-11-27.json)
+
 ## Measurement boundaries
 
 The test plays a quiet deterministic fixture to a verified virtual playback endpoint and reads only its paired verified virtual recording endpoint. No physical microphone or speaker is involved. Audio is not saved to a file.
@@ -47,9 +49,9 @@ Windows audio periods are API-reported configuration values. WASAPI discontinuit
 
 Kernel source is adapted from Microsoft's SimpleAudioSample, whose original render-discard and tone-generation behavior must not be mistaken for an audio link. The product's transport replaces those data paths; verification must compare data supplied on the render side against data observed on capture.
 
-## Returned Microsoft-signed package validation
+## Earlier signed evaluation 0.1.1 on Windows 10
 
-The returned 0.1.0.0 package was verified against the submitted image: unchanged INF and Authenticode-protected SYS content, trusted Microsoft catalog, and INF/SYS catalog membership. Both self-contained installers embed the exact verified files.
+The [0.1.1 evaluation release](https://github.com/titanfyre/Titan-Audio-Link/releases/tag/v0.1.1) uses the earlier 0.1.0.0 driver and has its own evaluation terms. Its returned package was verified against the submitted image: unchanged INF and Authenticode-protected SYS content, trusted Microsoft catalog, and INF/SYS catalog membership. Both self-contained installers embed the exact verified files.
 
 The actual console installer, live functionality and uninstall/unload passed on Windows 10 build 19045 x64 twice: normally and under standard Driver Verifier targeted at this product and the other two evaluation drivers. Guest test-signing was disabled; no lab certificate was used. 38 checks on two virtual audio pairs per campaign: six complete stereo fixtures, pair/channel isolation, cancellation, callback recovery and repeated stream open/close. No new minidump was observed. Both campaigns restored the original VM and preserved its historical checkpoints. No driver was installed on the development host.
 
