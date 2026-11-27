@@ -3,11 +3,13 @@
 <!-- simple-start:start -->
 Send sound from one Windows app to another through a virtual audio cable.
 
-[First steps](#first-steps) · [Guide en français](https://titancsa.github.io/fr/micro-virtuel-titan-audio-link/) · [Develop](#sdk-and-packages) · [Maintain](https://github.com/TitanCSA/sdk-packages/blob/main/CONTRIBUTING.md)
+[Guide en français](https://titancsa.github.io/fr/micro-virtuel-titan-audio-link/) · [SDK](#sdk-and-packages) · [Full version on Discord](https://titancsa.github.io/about/evidence/#release-contact)
 
 ## First steps
 
-1. Extract the [demo ZIP](https://github.com/titanfyre/Titan-Audio-Link/releases/download/v0.2.0-demo/Titan-Audio-Link-0.2.0-Demo-Windows-x64.zip) and run **TitanAudioLinkSetup.exe** from **Installers**.
+**64-bit Windows 10 version 2004 or later, or Windows 11.**
+
+1. Extract the [demo ZIP](https://github.com/titanfyre/Titan-Audio-Link/releases/download/v0.2.0-demo/Titan-Audio-Link-0.2.0-Demo-Windows-x64.zip) and run **TitanAudioLinkSetup.exe** from **Installers**. Restart Windows if requested.
 2. Open **TitanAudioLink.exe** and select the playback and recording pair.
 3. Click **Test virtual cable**. A passing test means sound reached the recording side.
 <!-- simple-start:end -->
@@ -133,6 +135,8 @@ Use the software only for authorized audio routing and testing. No illegal or un
 ## SDK and packages
 
 Choose a language in the [SDK and package guide](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-Audio-Link#readme) for exact install commands and examples. If your example requires a driver or app, install it separately.
+
+[First SDK check](https://titancsa.github.io/guides/titan-audio-link-first-run/#first-sdk-check) · [Python example](https://titancsa.github.io/guides/titan-audio-link-first-run/#python-sdk) · [Package maintenance](https://github.com/TitanCSA/sdk-packages/blob/main/CONTRIBUTING.md)
 <!-- central-sdk-packages:end -->
 
 ## Commercial integration and support
